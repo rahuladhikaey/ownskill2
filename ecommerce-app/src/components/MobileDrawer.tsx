@@ -115,12 +115,13 @@ export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
               <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-emerald-600 mb-6 font-outfit">Quick Access</h3>
               <nav className="space-y-1">
                 {[
-                  { name: "Home", href: "/" },
+                  { name: "Store Home", href: "/" },
                   { name: "All Products", href: "/products" },
-                  { name: "About Asali Swad", href: "/about" },
-                  { name: "Contact Support", href: "/contact" },
-                  { name: "AI Shopping Assistant", href: "/assistant" },
+                  { name: "Your Cart", href: "/cart" },
+                  { name: "Checkout", href: "/checkout" },
+                  { name: "AI Assistant", href: "/assistant" },
                 ].map((item) => (
+
                   <Link
                     key={item.name}
                     href={item.href}
@@ -138,11 +139,12 @@ export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
               <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-emerald-600 mb-6 font-outfit">Customer Care</h3>
               <nav className="space-y-1">
                 {[
-                  { name: "Help Center", href: "#" },
-                  { name: "Shipping Info", href: "#" },
-                  { name: "Returns & Refunds", href: "#" },
-                  { name: "Privacy Policy", href: "#" },
+                  { name: "Admin Portal", href: "/admin" },
+                  { name: "About Us", href: "/about" },
+                  { name: "Contact & Support", href: "/contact" },
+                  { name: "Privacy Policy", href: "/privacy-policy" },
                 ].map((item) => (
+
                   <Link
                     key={item.name}
                     href={item.href}
