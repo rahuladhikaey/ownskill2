@@ -1,4 +1,5 @@
 import Link from "next/link";
+export const dynamic = 'force-dynamic';
 import { supabaseServer } from "@/lib/supabaseServer";
 import { Product, Category } from "@/lib/types";
 import { AddToCartButton } from "@/components/AddToCartButton";
